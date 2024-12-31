@@ -8,3 +8,8 @@ services:
         target: /data
     ports:
       - 443:443
+    networks:
+      - website
+networks:
+  website:
+    driver: bridge
