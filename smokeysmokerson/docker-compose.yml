@@ -12,4 +12,5 @@ services:
       - website
 networks:
   website:
+    name: website
     driver: bridge
