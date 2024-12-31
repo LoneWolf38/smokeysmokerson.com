@@ -1,2 +1,10 @@
 services:
-
+  smokey:
+    container_name: mywebsite
+    image: drake/smoker
+    volumes:
+      - type: bind
+        source: /root/website/caddy
+        target: /data
+    ports:
+      - 443:443

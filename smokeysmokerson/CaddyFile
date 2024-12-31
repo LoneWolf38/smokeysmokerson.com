@@ -1,4 +1,4 @@
 https://smokeysmokerson.com {
-    root * /usr/share/caddy
+    root * /srv
     file_server
 }
