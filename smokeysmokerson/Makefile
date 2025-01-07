@@ -1,6 +1,6 @@
 build-website:
 	echo "Building the website"
-	@hugo build .
+	@hugo build . --config hugo.yml
 	echo "Building caddy server"
 	@docker build -t drake/smoker .
 
