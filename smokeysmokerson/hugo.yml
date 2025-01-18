@@ -39,7 +39,7 @@ languages:
           url: about/
           weight: 10
         - name: Resume
-          url: static/resume.pdf
+          url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
           weight: 15
 
 outputs:
@@ -72,11 +72,12 @@ params:
 
   profileMode:
     enabled: true
-    title: Personal
-    imageUrl: "images/personal.png"
+    title: smokeysmokerson
+    # imageUrl: "images/personal.png"
+    imageurl: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/images/smoker.png
     imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
+    imageWidth: 120
+    imageHeight: 120
     buttons:
       - name: Archives
         url: archives
@@ -84,11 +85,11 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "About me"
+    Title: "Hi, Welcome"
     Content: >
       👋 My name is Debabrata Choudhury!
       
-      - This is my persnal website where I write stuff about computer stuff. Some personal findings through out my career.
+      - This is my personal website where I write stuff about random stuff.
 
   socialIcons:
     - name: github
