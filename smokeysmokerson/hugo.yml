@@ -72,18 +72,19 @@ params:
 
   profileMode:
     enabled: true
-    title: smokeysmokerson
+    title: Debabrata Choudhury
     # imageUrl: "images/personal.png"
     imageurl: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/images/smoker.png
     imageTitle: my image
     imageWidth: 120
     imageHeight: 120
     buttons:
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
-
+      - name: Posts
+        url: posts/
+      - name: Resume
+        url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
+      - name: About
+        url: about
   homeInfoParams:
     Title: "Hi, Welcome"
     Content: >
@@ -93,8 +94,10 @@ params:
 
   socialIcons:
     - name: github
-      title: View Source on Github
       url: "https://github.com/LoneWolf38"
+    - name: x
+      title: View Source on Github
+      url: "https://x.com/callmedrak3"
 
 
   # label:
