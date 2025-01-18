@@ -10,7 +10,8 @@ theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
+disableThemeToggle: true
+buildDrafts: true
 buildFuture: false
 buildExpired: false
 enableEmoji: true
@@ -32,11 +33,14 @@ languages:
     menu:
       main:
         - name: Posts
-          url: posts
+          url: posts/
           weight: 5
         - name: About
-          url: tags/
+          url: about/
           weight: 10
+        - name: Resume
+          url: static/resume.pdf
+          weight: 15
 
 outputs:
   home:
@@ -67,9 +71,9 @@ params:
   images: ["images/papermod-cover.png"]
 
   profileMode:
-    enabled: false
+    enabled: true
     title: Personal
-    imageUrl: "#"
+    imageUrl: "images/personal.png"
     imageTitle: my image
     # imageWidth: 120
     # imageHeight: 120
@@ -84,7 +88,7 @@ params:
     Content: >
       👋 My name is Debabrata Choudhury!
       
-      - This is my persnal website where I write stuff about computer science
+      - This is my persnal website where I write stuff about computer stuff. Some personal findings through out my career.
 
   socialIcons:
     - name: github
