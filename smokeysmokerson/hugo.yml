@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://smokeysmokerson.com"
-title:  
+title: Personal Blog
 paginate: 5
 module:
   imports:
@@ -10,13 +10,14 @@ theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-disableThemeToggle: true
 buildDrafts: true
 buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
+disableThemeToggle: true
 mainsections: ["posts", "about", "resume"]
+
 
 minify:
   disableXML: true
@@ -32,15 +33,25 @@ languages:
       series: series
     menu:
       main:
+        - name: Home
+          url: /
+          weight: 1 
         - name: Posts
           url: posts/
-          weight: 5
-        - name: About
+          weight: 2
+        - name: Search
+          url: search
+          weight: 3
+        - name: Projects
+          url: projects
+          weight: 3
+        - name: About Me
           url: about/
-          weight: 10
+          weight: 4
         - name: Resume
           url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
-          weight: 15
+          weight: 5
+
 
 outputs:
   home:
@@ -50,14 +61,23 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Personal Diary"
+  description: "Debabrata Choudhury - Senior Platform Engineer"
   author: Debabrata Choudhury
   # author: ["Me", "You"] # multiple authors
 
-  defaultTheme: auto
+  defaultTheme: dark
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
   # disableSpecial1stPost: true
   displayFullLangName: true
   ShowPostNavLinks: true
@@ -76,8 +96,8 @@ params:
     # imageUrl: "images/personal.png"
     imageurl: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/images/smoker.png
     imageTitle: my image
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 240
+    imageHeight: 240
     buttons:
       - name: Posts
         url: posts/
@@ -96,8 +116,11 @@ params:
     - name: github
       url: "https://github.com/LoneWolf38"
     - name: x
-      title: View Source on Github
       url: "https://x.com/callmedrak3"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/lonewolf38/"
+    - name: email
+      url: "mailto:sudodeba97.iiitbbsr@gmail.com"
 
 
   # label:
@@ -110,13 +133,6 @@ params:
   #     google:
   #         SiteVerificationTag: "XYZabc"
 
-  assets:
-    disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
@@ -144,6 +160,11 @@ markup:
     # lineNos: true
     # style: monokai
 
+assets:
+  favicon: "favicon.ico"
+  favicon16x16: "/assets/favicon-16x16.png"
+  favicon32x32: "/assets/favicon-32x32.png"
+  apple_touch_icon: "/assets/apple-touch-icon.png"
 # privacy:
 #   vimeo:
 #     disabled: false
