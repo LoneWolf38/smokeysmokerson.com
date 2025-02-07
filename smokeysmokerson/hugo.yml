@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://smokeysmokerson.com"
-title: Personal Blog
+title: smokeysmokerson.com
 paginate: 5
 module:
   imports:
@@ -10,9 +10,9 @@ theme: ["PaperMod"]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: true
-buildFuture: false
-buildExpired: false
+buildDrafts: false
+buildFuture: true
+buildExpired: true
 enableEmoji: true
 pygmentsUseClasses: true
 disableThemeToggle: true
@@ -45,8 +45,8 @@ languages:
         - name: Projects
           url: projects
           weight: 3
-        - name: About Me
-          url: about/
+        - name: About
+          url: /about/
           weight: 4
         - name: Resume
           url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
@@ -88,7 +88,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  # images: ["images/papermod-cover.png"]
 
   profileMode:
     enabled: true
