@@ -6,7 +6,7 @@ HideMeta: false
 ShowBreadCrumbs: true
 ShowReadingTime: true
 showtoc: true
-tocopen: true
+tocopen: false
 ---
 ## **What is BigData?**
 
