@@ -2,7 +2,7 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://smokeysmokerson.com"
 title: smokeysmokerson.com
-paginate: 5
+pagination.pagerSize: 5
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
@@ -51,6 +51,9 @@ languages:
         - name: Resume
           url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
           weight: 5
+        - name: Games
+          url: games/
+          weight: 6
 
 
 outputs:
@@ -188,3 +191,6 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+  googleAnalytics:
+    id: G-5TZ69SF0H2
+
