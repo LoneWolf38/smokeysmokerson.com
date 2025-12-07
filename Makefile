@@ -17,3 +17,6 @@ all: build-website ship-container
 ## serve the productin site locally with watch and open in a browser
 serve:
 	hugo server serve --config hugo.yml --environment production --disableFastRender -w -O
+
+setup:
+	git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1

@@ -1,0 +1,6 @@
+baseURL = 'https://smokeysmokerson.com/'
+title = 'Personal Diary'
+languageCode = "en"
+[[module.imports]]
+path = "github.com/adityatelange/hugo-PaperMod"
+theme = "PaperMod"
