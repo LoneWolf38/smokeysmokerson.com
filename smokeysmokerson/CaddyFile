@@ -1,4 +1,0 @@
-https://smokeysmokerson.com {
-    root * /srv
-    file_server
-}
