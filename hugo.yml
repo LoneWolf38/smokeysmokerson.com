@@ -46,7 +46,7 @@ languages:
           url: /about/
           weight: 4
         - name: Resume
-          url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
+          url: "resume.pdf"
           weight: 5
 
 outputs:
@@ -90,7 +90,7 @@ params:
     enabled: true
     title: Debabrata Choudhury
     # imageUrl: "images/personal.png"
-    imageurl: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/images/smoker.png
+    imageurl: "images/dp.png"
     imageTitle: my image
     imageWidth: 240
     imageHeight: 240
@@ -98,7 +98,7 @@ params:
       - name: Posts
         url: posts/
       - name: Resume
-        url: https://raw.githubusercontent.com/LoneWolf38/smokeysmokerson.com/main/smokeysmokerson/static/resume.pdf
+        url: "resume.pdf"
       - name: About
         url: about
   homeInfoParams:
@@ -106,7 +106,7 @@ params:
     Content: >
       👋 My name is Debabrata Choudhury!
       
-      - This is my personal website where I write stuff about random stuff.
+      - This is my personal website where I write about random stuff.
 
   socialIcons:
     - name: github
